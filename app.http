@@ -1,0 +1,20 @@
+POST http://localhost:3005/api/users/register 
+Content-Type: application/json
+
+{
+    "username": "selva12", "email": "selva1201@gmail.com", "password": "selva_1201"
+}
+
+###
+
+POST http://192.168.74.181:3005/api/users/login 
+Content-Type: application/json
+
+{
+    "email": "selva1201@gmail.com", "password": "selva_1201"
+}
+
+###
+
+curl -X DELETE http://192.168.74.181:3005/api/jobs/2 
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1MmVhY2FlMi1mYzJjLTExZWYtYWIxMy1kNDkzOTAyYWNiZjYiLCJpYXQiOjE3NDE0NTIzMjAsImV4cCI6MTc0MTQ1NTkyMH0.o1hJeCmCwbxxM4bIKeK9yLCMSwnG1NzBfesto9xw2CQ"
